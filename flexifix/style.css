@@ -224,6 +224,10 @@ header,
     margin: 0 auto;
 }
 
-img{
+img {
     width: 30px;
+}
+
+header {
+    background-position: 0;
 }
