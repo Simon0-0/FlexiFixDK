@@ -236,3 +236,72 @@ img {
 header {
     background-position: 0;
 }
+
+.footer-chain {
+    width: 100%;
+    position:sticky;
+    margin-bottom: 2vw;
+}
+
+footer {
+    column-gap: 2vw;
+    margin-bottom: 2vw;
+}
+
+footer > div p {
+    font-size: 16px;
+}
+
+footer address {
+    font-style: normal;
+    color: var(--flexifix-brown);
+}
+
+.footer-nav a {
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: var(--flexifix-brown);
+    font-size: 20px;
+}
+
+.footer-nav {
+    gap: 4vw;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: auto;
+}
+
+.footer-section {
+    row-gap: 3vw;
+}
+
+.footer-info {
+    column-gap: 8vw;
+}
+
+.footer-info address {
+    white-space: pre-wrap;
+}
+
+.footer-contact-info a,
+.footer-social a {
+    text-decoration: none;
+    color: var(--flexifix-brown);
+}
+
+.footer-opening-hours,
+.footer-contact-info {
+    row-gap: 1vw;
+}
+
+.footer-social {
+    row-gap: 1vw;
+}
+
+.footer-social div {
+    gap: 1vw;
+}
+
+
