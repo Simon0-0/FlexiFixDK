@@ -1,0 +1,229 @@
+/*
+Theme Name: FlexiFix
+Theme URI: https://wordpress.org/themes/flexifix
+Author: group 202
+Author URI: https://wordpress.org
+Description: 
+Requires at least: 6.1
+Tested up to: 6.2
+Requires PHP: 5.6
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: 
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, accessibility-ready, blog, portfolio, news
+*/
+
+:root {
+    --flexifix-brown: #523333;
+    --flexifix-background: #F5EAD9;
+    --flexifix-red: #9B2321;
+    --flexifix-lightBlue: #D7E0E9;
+    --flexifix-sennep: #CEB133;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #F5EAD9;
+    color: var(--flexifix-brown);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'The Goldsmith Vintage', sans-serif;
+    font-weight: 100;
+    padding: 0;
+    line-height: 0.8;
+}
+
+h1 {
+    font-size: 195px;
+    text-align: center;
+    height:min-content;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 3%;
+    font-weight: 100;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.address-header {
+    background-color: var(--flexifix-brown);
+    color: var(--flexifix-background);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    font-family: 'The Goldsmith Vintage', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    align-items: end;
+    justify-content: right;
+    gap: 4vw;
+    color: var(--flexifix-background);
+}
+
+.address-header address {
+    font-style: normal;
+}
+
+.address-header a {
+    text-decoration: none;
+    color: var(--flexifix-background);
+    margin-right: 5%;
+}
+
+header,
+.main-menu {
+    padding-top: 3%;
+    font-size: 20px;
+}
+
+.hero-anchor {
+    justify-content: center;
+    column-gap: 2vw;
+    margin-top: 5vw;
+}
+
+.hero-anchor a {
+    width: 200px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.main-menu {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    line-height: 55px;
+    /* position: relative; */
+}
+
+.main-menu ul li.current_page_item>a {
+    color: red;
+}
+
+.main-menu ul li a {
+    color: var(--flexifix-brown);
+    padding: 0 30px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.main-menu ul.sub-menu {
+    position: absolute;
+    padding-left: 0;
+    background-color: #ffffff83;
+    z-index: 1;
+    text-align: left;
+    display: none;
+}
+
+.main-menu ul .menu-item-has-children:hover>ul,
+.main-menu ul .menu-item-has-children:focus+ul {
+    display: block
+}
+
+.main-menu ul.sub-menu li {
+    width: max-content;
+}
+
+.main-menu ul.sub-menu a {
+    color: var(--flexifix-background);
+}
+
+.menu-icon,
+.menu-button {
+    cursor: pointer;
+    display: none;
+
+}
+
+.hero-section > p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.new-arrivals {
+    margin-top: 10%;
+}
+
+.new-arrivals > h2 {
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.flexifix-values {
+    margin-top: 10%;
+    position: relative;
+    background: rgba(255, 255, 255, .3);
+}
+
+.flexifix-values > h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.flexifix-values > h2 span {
+    color: var(--flexifix-red);
+}
+
+.flexifix-values > p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+img{
+    width: 30px;
+}
