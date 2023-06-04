@@ -72,9 +72,19 @@ h4 {
     margin: 0;
 }
 
+h5 {
+    font-size: 20px;
+    margin: 0;
+}
+
+h6 {
+    font-size: 18px;
+    margin: 0;
+}
+
 p {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 0;
 }
 
@@ -103,6 +113,10 @@ p {
 
 .margin-bottom {
     margin-bottom: 2vw;
+}
+
+.margin-auto {
+    margin: 0 auto;
 }
 
 .address-header {
@@ -404,4 +418,145 @@ footer address {
 
 .repair-tips-img > img {
     width: 300px;
+}
+
+.repair-list-intro {
+    gap: 5vw;
+    justify-content: space-evenly;
+}
+
+.repair-list h3 {
+    text-transform: uppercase;
+}
+
+.repair-list img {
+    width: 300px;
+}
+
+.repair-list-text {
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+.repair-list-text ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+    list-style: none;
+}
+
+.repair-list-text ul > li {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list-checkmark > li::before{
+    background-image: url(./assets/repair-page/repair-checkmark.svg);
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-position: center center;
+    vertical-align: middle;
+    margin-right: 1vw;
+}
+
+.list-cross > li::before{
+    background-image: url(./assets/repair-page/repair-cross.svg);
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-position: center center;
+    vertical-align: middle;
+    margin-right: 1vw;
+}
+
+.repair-selling-points {
+    justify-content: space-evenly;
+    margin: 8vw auto 5vw auto;
+}
+
+.repair-selling-points img {
+    width: 250px;
+    height: 200px;
+}
+
+.repair-selling-points h3 {
+    color: var(--flexifix-sennep);
+}
+
+.repair-selling-points div {
+    gap: 3vw;
+}
+
+.repair-info {
+    margin: 10vw auto;
+}
+
+.repair-info-gap {
+    gap: 3vw;
+}
+
+.repair-info img {
+    width: 50px;
+}
+
+.repair-info p {
+    font-size: 15px;
+}
+
+.repair-info-text h5 {
+    margin-bottom: .5vw;
+}
+
+.repair-info-text > h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1vw;
+}
+
+.repair-info-text {
+    gap: 2vw;
+}
+
+.repair-info-text .repair-info-heading {
+    margin: 2vw 0;
+}
+
+.repair-gift-container {
+    margin: 5vw auto;
+}
+
+.repair-gift-container h2 {
+    text-align: center;
+}
+
+.repair-gift-container h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--flexifix-red);
+}
+
+.repair-gift-card {
+    justify-content: center;
+    gap: 5vw;
+}
+
+.repair-gift-card img {
+    width: 350px;
+}
+
+.gift-card-price {
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+.gift-card-price img {
+    width: 100px;
 }
