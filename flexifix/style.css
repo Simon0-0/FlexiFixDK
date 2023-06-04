@@ -107,7 +107,7 @@ p {
 }
 
 .less-width {
-    width: 80%;
+    width: 80%; /* POTENTIALLY 70% OR EVEN 65%? */
     margin: 0 auto;
 }
 
@@ -559,4 +559,111 @@ footer address {
 
 .gift-card-price img {
     width: 100px;
+}
+
+
+/* RENTAL PAGE */
+
+
+.rental-hero-container {
+    margin: 5vw auto;
+}
+
+.rental-hero-container img {
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.rental-hero-intro {
+    margin: 3vw auto 7vw auto;
+    gap: 3.5vw;
+}
+
+.rental-hero-intro p {
+    line-height: 1.2;
+    text-align: center;
+    width: 30%;
+}
+
+.rental-selling-points {
+    background-image: url(assets/rental-page/rental-selling-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5vw;
+}
+
+.rental-selling-points h2 {
+    color: var(--flexifix-sennep);
+    text-align: center;
+    padding: 5vw 0 3vw 0;
+    margin: 0;
+}
+
+.rental-selling-text {
+    width: 60%;
+    justify-content: space-evenly;
+    margin: 0vw auto;
+    padding: 3vw 0;
+}
+
+.rental-selling-text p {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.rental-example-container {
+    margin: 5vw auto;
+}
+
+.rental-example-container h2 {
+    color: var(--flexifix-sennep);
+    margin-bottom: 5vw;
+}
+
+.rental-example {
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+.rental-invidual-bike {
+    align-items: center;
+    /* justify-content: end; */
+    row-gap: 1vw;
+}
+
+.rental-example img {
+    width: 300px;
+    height: 200px;
+}
+
+.rental-bike-name,
+.rental-bike-price {
+    width: 80%;
+    text-align: center;
+}
+
+.rental-bike-price {
+    color: var(--flexifix-red);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+
+.rental-bike-price span,
+.individual {
+    font-size: 25px;
+    margin-top: 3%;
+}
+
+.rental-example-text {
+    width: 80%;
+}
+
+.rental-example-text h5 {
+    margin: 4vw 0 1.5vw 0;
+}
+
+.rental-example-text pre {
+    font-family: 'Roboto Condensed', sans-serif;
 }
