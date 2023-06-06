@@ -821,3 +821,17 @@ footer address {
     width: 30%;
     margin: 0;
 }
+
+.components-hero {
+    background-image: url(assets/components-page/components-hero-img-opt-3.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50vw 50vw;
+    height: 70vh;
+}
+
+.components-hero h2 {
+    text-align: start;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+}
