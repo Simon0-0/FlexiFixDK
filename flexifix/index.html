@@ -779,6 +779,60 @@
       });</script>
   </div>
 
+  <script>
+    async function populate() {
+
+      const requestURL = 'https://simon0-0.github.io/Data/data.json';
+      const request = new Request(requestURL);
+
+      const response = await fetch(request);
+      const reviewText = await response.text();
+
+      const allReview = JSON.parse(reviewText);
+
+      populateReviews(allReview);
+
+    }
+
+
+
+    function populateReviews(obj) {
+      const div = document.querySelector('#review');
+      const reviewsR = obj.reviews;
+
+      for (const review of reviewsR) {
+        const myArticle = document.createElement("article");
+        const myH2 = document.createElement("h2");
+        const myPara1 = document.createElement("p");
+        const myPara2 = document.createElement("p");
+        const myPara3 = document.createElement("p");
+        const myImg = document.createElement("img");
+
+        myH2.textContent = review.title;
+        myPara1.textContent = review.publish_date;
+        myPara2.textContent = review.description;
+        myPara3.textContent = review.stars;
+        myImg.textContent = review.featured_image;
+
+
+
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myImg);
+
+        div.appendChild(myArticle);
+      }
+    }
+
+    populate();
+  </script>
+
+  <div id="review" class="less-width">
+
+  </div>
+
   <img src="assets/footer-chain.svg" class="footer-chain" alt="Bicycle-chain">
   <footer class="flex-row less-width margin-bottom">
     <div class="footer-logo">
@@ -797,11 +851,11 @@
 
       <div class="flex-row footer-info">
         <div class="flex-column">
-          <address>FlexiFix 
-Danmarksgade 86A 
-9000 Aalborg</address>
+          <address>FlexiFix
+            Danmarksgade 86A
+            9000 Aalborg</address>
           <address>
-CVR: 37692182
+            CVR: 37692182
           </address>
         </div>
 

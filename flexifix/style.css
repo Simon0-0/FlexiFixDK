@@ -807,3 +807,17 @@ footer address {
 .staff-user p {
     color: var(--flexifix-red);
 }
+
+#review {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    margin: 0 auto;
+}
+
+#review article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 0;
+}
