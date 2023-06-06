@@ -767,6 +767,7 @@ footer address {
 
 .about-values p {
     font-size: 15px;
+    font-weight: bold;
 }
 
 .about-staff-container img {
@@ -779,7 +780,6 @@ footer address {
     gap: 5vw;
     display: flex;
     flex-wrap: wrap;
-    /* flex-basis: content; */
     width:100%;
 }
 
