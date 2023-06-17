@@ -107,7 +107,7 @@ p {
 }
 
 .less-width {
-    width: 80%; /* POTENTIALLY 70% OR EVEN 65%? */
+    width: 65%; /* POTENTIALLY 70% OR EVEN 65%? */
     margin: 0 auto;
 }
 
